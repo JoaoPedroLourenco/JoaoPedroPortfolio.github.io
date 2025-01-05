@@ -22,9 +22,15 @@ const Header = () => {
 
       <nav className="hidden md:flex w-full h-full justify-between items-center px-5  lg:px-0">
         <div className="flex gap-3 text-white font-semibold md:text-xl">
-          <a href="#About">Sobre</a>
-          <a href="#Conhecimentos">Conhecimentos</a>
-          <a href="#Projetos">Projetos</a>
+          <a href="#About" className="hover:text-blue-500 duration-200">
+            Sobre
+          </a>
+          <a href="#Conhecimentos" className="hover:text-blue-500 duration-200">
+            Conhecimentos
+          </a>
+          <a href="#Projetos" className="hover:text-blue-500 duration-200">
+            Projetos
+          </a>
         </div>
       </nav>
       <div>
@@ -34,7 +40,7 @@ const Header = () => {
           rel="noopener noreferrer"
           download
         >
-          <button className="w-[150px] px-4 py-2 bg-blue-500 rounded-full text-white font-semibold flex gap-2 items-center justify-center">
+          <button className="w-[150px] px-4 py-2 bg-blue-500 hover:bg-blue-400 duration-200 rounded-full text-white font-semibold flex gap-2 items-center justify-center">
             <i className="fa fa-download"></i>
             Baixar CV
           </button>

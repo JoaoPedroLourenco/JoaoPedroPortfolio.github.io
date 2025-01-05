@@ -3,7 +3,7 @@ import uploadedFileLink from "../../../assets/CVforDownload/CV João Pedro Loure
 
 const MenuHeader = ({ openCloseMenu }) => {
   return (
-    <div className="w-full h-auto py-10 bg-white flex flex-col items-center absolute top-0 left-0 z-50 ">
+    <div className="w-full py-10 bg-white flex flex-col items-center absolute top-0 left-0 z-50 duration-200">
       <button
         onClick={openCloseMenu}
         className="w-[40px] h-[40px] hover:bg-gray-100 duration-200 flex items-center justify-center rounded-full"
@@ -14,19 +14,19 @@ const MenuHeader = ({ openCloseMenu }) => {
         <ul className="w-full flex flex-col items-center gap-5 text-center py-5">
           <a
             href="#About"
-            className="w-full h-[50px] flex items-center justify-center text-3xl font-medium"
+            className="w-full h-[50px] flex items-center justify-center text-3xl font-medium hover:text-blue-500 duration-200"
           >
             Sobre
           </a>
           <a
             href="#Conhecimentos"
-            className="w-full h-[50px] flex items-center justify-center text-3xl font-medium"
+            className="w-full h-[50px] flex items-center justify-center text-3xl font-medium hover:text-blue-500 duration-200"
           >
             Conhecimentos
           </a>
           <a
             href="#Projetos"
-            className="w-full h-[50px] flex items-center justify-center text-3xl font-medium"
+            className="w-full h-[50px] flex items-center justify-center text-3xl font-medium hover:text-blue-500 duration-200"
           >
             Projetos
           </a>
@@ -37,7 +37,7 @@ const MenuHeader = ({ openCloseMenu }) => {
               rel="noopener noreferrer"
               download
             >
-              <button className="w-[150px] px-4 py-2 bg-blue-500 rounded-full text-white font-semibold flex gap-2 items-center justify-center">
+              <button className="w-[150px] px-4 py-2 bg-blue-500 hover:bg-blue-400 duration-200 rounded-full text-white font-semibold flex gap-2 items-center justify-center">
                 <i className="fa fa-download"></i>
                 Baixar CV
               </button>
